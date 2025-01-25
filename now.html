@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+.slider-heading{
+    text-align: center;
+    margin-inline: auto;
+    width: fit-content;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: rgb(196, 196, 0);
+    transform: translateY(-40px);
+    position: relative;
+    margin-block-start: 60px;
+    padding-inline: 20px;
+}
+.slider-heading::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 7px;
+    background-color: rgb(196, 196, 0);
+}
+
+.type-slider-wrapper *{
+    width: 100%;
+    box-sizing: content-box;
+    
+}
+.slider{
+    width: 850px;
+    padding-block: 80px;
+    margin-inline: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(https://img.freepik.com/free-photo/stone-walled-restaurant-top-lighting_140725-9731.jpg?w=360&t=st=1706559717~exp=1706560317~hmac=436cb9d640fe42f3f2e190a08dc3ab5e0dedd82273645e8ec326b787af26bf74);
+    display: flex;
+    background-attachment: fixed;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+.slides-container{
+    width: auto;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    animation: type 20s linear infinite forwards;
+}
+@keyframes type {
+    100%{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+.slide{
+    min-width: 180px;
+    font-size: 30px;
+    font-weight: 550;
+    border: 5px solid rgb(161,161,1);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px ;
+    color: #fff;
+}
+.slide:hover{
+    cursor: pointer;
+}
+@media (max-width:850px){
+    .slider{
+        width: auto;
+        border-radius: 0;
+    }
+    .slide{
+        min-width: 150px;
+        font-size: 25px;
+        font-weight: 550;
+        border: 5px solid rgb(161,161,1);
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px ;
+        color: #fff;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="slider-heading">
+        Facilities We Provide
+    </h1>
+    <section class="type-slider-wrapper">
+        <div class="slider">
+            <div class="slides-container">
+                <div class="slide">facilitie 1</div>
+                <div class="slide">Facilite 2</div>
+                <div class="slide">Facilite 3</div>
+                <div class="slide">Facilite 4</div>
+                <div class="slide">Facilite 5</div>
+            </div>
+            <div class="slides-container">
+                <div class="slide">facilitie 1</div>
+                <div class="slide">Facilite 2</div>
+                <div class="slide">Facilite 3</div>
+                <div class="slide">Facilite 4</div>
+                <div class="slide">Facilite 5</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
