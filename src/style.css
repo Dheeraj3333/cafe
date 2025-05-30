@@ -646,10 +646,14 @@ body::-webkit-scrollbar{
 
 /* *******************************************type-slider*************************************** */
 
+#menu{
+    padding-top: 20px;
+}
+
 .slider-heading{
     text-align: center;
     margin-inline: auto;
-    width: fit-content;
+    width: fit-content !important;
     font-size: 45px;
     text-transform: capitalize;
     color: var(--yellow);
