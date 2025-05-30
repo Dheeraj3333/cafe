@@ -552,7 +552,7 @@ body::-webkit-scrollbar{
 
 .counter {
     width: 100%;
-    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(assets/count-bg.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(../assets/count-bg.jpg);
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -676,7 +676,7 @@ body::-webkit-scrollbar{
     width: 850px;
     padding-block: 80px;
     margin-inline: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(assets/stone-walled-restaurant-top-lighting.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(../assets/stone-walled-restaurant-top-lighting.jpg);
     display: flex;
     background-attachment: fixed;
     background-size: 850px;
